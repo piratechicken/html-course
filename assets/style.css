@@ -82,8 +82,15 @@ footer {
  color: rgb(227, 223, 255);;
 }
 
-.section {
+.section-a, .section-b {
   min-height: 100vh;
+  padding: 20px 10px;
+}
+.section-a {
+  background: rgb(211, 192, 205);
+}
+.section-b {
+  background: rgb(206, 181, 198);
 }
 
 /* MEDIA QUERIES */
