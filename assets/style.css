@@ -25,7 +25,7 @@ header {
 }
 
 h1, h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
   text-align: center;
 }
 
@@ -91,6 +91,26 @@ footer {
 }
 .section-b {
   background: rgb(206, 181, 198);
+}
+
+.ca-students-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ca-student-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.1em;
+  text-decoration: none;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background: rgb(206, 15, 145);
 }
 
 /* MEDIA QUERIES */
