@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+/* $color1: rgb(227, 223, 255);
+$color2: rgb(211, 192, 205);
+$color3: rgb(177, 153, 148);
+$color4: rgb(147, 118, 102);
+$color5: rgb(61, 58, 75); */
+
+body {
+  background: rgb(211, 192, 205);
+  font-family: 'Lato', sans-serif;
+}
+
+header, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  background: rgb(61, 58, 75);
+}
+
+header {
+  height: 100vh;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+h1 {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 5px rgb(78, 75, 95);;
+  color: rgb(227, 223, 255);
+  font-size: 1.9em;
+}
+
+h2{
+  margin: 30px 0 10px 0;
+  color: rgb(61, 58, 75);
+  font-size: 1.5em;
+}
+
+nav {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  color: rgb(227, 223, 255); 
+  background: rgb(61, 58, 75);
+  transition: background-color 1.5s;
+}
+
+nav p:hover, nav p:focus {
+  background: rgb(94, 92, 105);
+}
+
+footer {
+ color: rgb(227, 223, 255);;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 750px) {
+  /* Everything wrapped in the curly backets of this @media statement will apply to screens wider than 800px. I have made my default styles appriopriate to mobile screens */
+
+  header, h1, nav {
+    height: auto;
+  }
+
+  header {
+    min-height: 20vh;
+  }
+
+  h1 {
+    min-height: 10vh;
+    border: none;
+  }
+
+  nav {   
+    /* I only need to change the styles I want to overwrite. Here I am changing my flex direction to row (sideways) from column */
+    flex-direction: row;
+    min-height: 10vh;
+  }
+
+  nav p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    width: calc(100vw / 4);
+     /* You can do simple calcs in CSS. */
+    font-size: 0.8em;
+  }
+
+  /* Media query for greater than 800px finishes here */
+}
+
+@media screen and (min-width: 1000px) {
+  nav p {
+    font-size: 1em;
+    /* You can do simple calcs in CSS. */
+  }
+}
