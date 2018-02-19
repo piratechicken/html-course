@@ -50,10 +50,37 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-h2{
+h2 {
   margin: 30px 0 10px 0;
   color: rgb(61, 58, 75);
   font-size: 1.5em;
+}
+
+h3 {
+  margin: 30px 0 0 0;
+  color: rgb(61, 58, 75);
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+p, ul {
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(114, 97, 194);
+  transition: color 0.7s;
+}
+
+a:hover {
+  color: rgb(71, 42, 201);
 }
 
 .logo-container {
@@ -63,6 +90,8 @@ h2{
 
 img {
   margin: 20px auto;
+  width: 80px;
+  height: auto;
 }
 
 nav {
@@ -75,6 +104,7 @@ nav {
 }
 
 nav a {
+  height: 10vh;
   text-decoration: none;
 }
 
