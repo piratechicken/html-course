@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- IMPORTING GOOGLE FONTS FROM THE API -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+
+  <!-- LINKING TO MY OWN CSS (IT'S IN A FOLDER, SO I'VE INCLUDED THAT IN THE PATH. I can use more than one! But note that th eone that comes secend in order here will overwrite the first is the have styles for the same thing -->
+  <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <title>HTML Resources</title>
+</head>
+
+<body>
+  <header>
+    <h1>HTML Resources</h1>
+    <nav>
+      <a href="#resources"><p>Resources</p></a>
+      <a href="#design"><p>Design</p></a>
+      <a href="#challenges1"><p>Challenges 1</p></a>
+      <a href="#challenges2"><p>Challenges 2</p></a>
+    </nav>
+  </header>
+  
+  <div class="section-b">
+    <div class=logo-container>
+      <img id="spaceinvader" src="./assets/img/spaceinvader.png" alt="space invader alien">
+    </div>
+    <p>THis is the new bit</p>
+    <p>Have a quick look at this intro to JavaScript before next Saturday. It'll only take 15 minutes but introduces you to a few of the concepts like variables (not scary), "strings", and operators (again, not scary, it just means plus signs):</p>
+    <p><a href="https://www.javascript.com/try" target="_blank"> https://www.javascript.com/try</a></p>  
+  </div>
+
+  <div class="section-a" id="resources">
+    <h2>Resources</h2>
+    <div class=logo-container>
+      <img src="./assets/img/zelda1.png" alt="pixel zelda">
+    </div>
+    <p>A couple of games to help learn flexbox: <a href="http://flexboxfroggy.com/">Flexbox froggy</a> and <a href="http://www.flexboxdefense.com/">Flexbox defence</a></p> 
+    
+    <p><a href="https://specificity.keegan.st/">Specificity calculator</a>, if you want to investigate which css rules override others</p> 
+    
+    <p><a href="https://codepen.io/">Codepen</a>, for paying with html and css (and eventually js). I highly recommend signing up, it's free!</p> 
+    
+    <p><a href="https://www.codecademy.com/en/ tracks/web">Codecademy</a> has great free courses. The HTML one has recently been updated with the latest elements.</p> 
+    
+    <p><a href="https://teamtreehouse.com/ subscribe/plans?trial=yes">Treehouse</a> has some great vids. There's a seven day trial but it's one of those ones where you have to give yur credit card details and unless you cancel it'll pull out the first payment after seven days. Still, $25/month is great value for what you get. I recommend the CSS Layout Basics course for a really good intro to mobile first design.</p>
+    
+    <p>And here's a <a href="http://au.pcmag.com/password-managers-products/4524/guide/the-best-password-managers-of-2018">review of password managers</a>.</p> 
+  </div>
+
+  <div class="section-b" id="design">
+    <h2>Design resources</h2>
+    <div class=logo-container>
+      <img src="./assets/img/beserk.png" alt="Atari Beserk alien">
+    </div>
+    <ul>
+      <li><a href="http://www.theworldsworstwebsiteever.com">World's Worst Website</a></li>
+      <li><a href="https://dribbble.com/">Dribbble</a></li>
+      <li></li><a href="https://www.pinterest.com.au/">Pinterest</a></li>
+      <li><a href="https://www.canva.com/learn/make-a-mood-board/">Mood boards</a></li>
+    </ul>
+    
+    <h3>Some nice sites from bootcamp students:</h3>
+    <ul>
+      <li><a href="https://cloudilicious.github.io">Sharon Chen</a></li>
+      <li><a href="https://tomomioki.netlify.com">Tomomi Oki</a></li>
+      <li><a href="https://isabellegaboc.netlify.com">Isabelle Gaboc</a></li>
+      <li><a href="http://www.hannahbourke.io">Hannah Bourke</a></li>
+      <li><a href="https://juliaryan.io/">Julia Ryan</a></li>
+      <li><a href="https://www.glenndimaliwat.com">Glenn Dimaliwat</a></li>
+      <li><a href="http://cholenasmart.com/">Cholena Smart</a></li>
+    </ul>
+  </div>
+
+  <div class="section-a" id="challenges1">
+    <h2>CHALLENGES</h2>
+    <div class=logo-container>
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+    </div>
+    <p>When doing these, you might like to play with them in codepen:</p>
+    <ul>
+      <li>- Sign up to a password manager.</li>
+      <li>- Investigate what a css reset is and implement it on your site.</li>
+      <li>- CSS hover effects are a great way to give feedback. Add one to your nav items.</li>
+      <li>- Make your hover effect a bit nicer by adding a css <strong>transition</strong> of around 0.5 second.</li>
+    </ul>
+  </div>
+  
+  <div class="section-b" id="challenges2">
+    <h2>EXTRA CHALLENGES</h2>
+    <div class=logo-container>
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+    </div>
+    <p>In case you want more!</p>
+    <ul>
+      <li>- Use a google font (pick a font, follow the instructions, cut/paste)</li>
+      <li>- Make your website responsive so that it reads well on mobile, tablet and desktop (google 'css breakpoints')</li>
+      <li>- Make your nav items more "button-like" by putting them in a div with a height and width. Make the whole div clickable </li>
+    </ul>
+  </div>
+
+  <div class="section-a">
+    <h2>BONUS SUPER EPIC HARD CHALLENGE</h2> 
+    <div class=logo-container>
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+      <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
+    </div>
+    <p>There is a way to continuously deploy changes to your site as you update. This is done by signing up to <a href="https://github.com/">Github</a> and getting Netlify to deploy from your repository there. Git can be a bit tricky, so I recommend downloading the Github desktop app.</p>
+    <p>That's how I've done this site. You can check it out <a href="https://github.com/piratechicken/html-course">here!</a></p>
+  </div>
+
+    <footer>
+      This is a footer
+    </footer>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
