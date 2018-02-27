@@ -69,9 +69,20 @@ p, ul {
   max-width: 600px;
   font-size: 1.2em;
   line-height: 1.4em;
+  text-align: left;
+}
+
+p {
   text-align: center;
 }
 
+li {
+  margin-bottom: 1em;
+}
+
+li:before {
+  content: '◦ ';
+}
 
 a {
   text-decoration: none;
@@ -81,6 +92,10 @@ a {
 
 a:hover {
   color: rgb(71, 42, 201);
+}
+
+code {
+  margin: auto;
 }
 
 .logo-container {

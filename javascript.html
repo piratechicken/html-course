@@ -17,26 +17,63 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <title>HTML Resources</title>
+  <title>JS Resources</title>
 </head>
 
 <body>
   <header>
-    <h1>HTML Resources</h1>
+    <h1>JavaScript Resources</h1>
     <nav>
+      <a href="#data"><p>Data, variables, etc</p></a>
       <a href="#resources"><p>Resources</p></a>
-      <a href="#design"><p>Design</p></a>
       <a href="#challenges1"><p>Challenges 1</p></a>
       <a href="#challenges2"><p>Challenges 2</p></a>
     </nav>
   </header>
   
-  <div class="section-b">
+  <div class="section-a">
     <h2>Silly JavaScript animation</h2>
     <div class=logo-container>
       <img id="spaceinvader" src="./assets/img/spaceinvader1.png" alt="space invader alien">
     </div>
     <p>Open the browser console and run the function startSpaceInvader. Don't forget that to run a function you need to include the brackets: ().</p>
+  </div>
+
+  <div class="section-b" id="data">
+    <h2>Data, variables, functions</h2>
+    <div class=logo-container>
+      <img src="./assets/img/beserk.png" alt="Atari Beserk alien">
+    </div>
+    <h3>Strings and numbers</h3>
+    <ul>
+      <li>The two main data types we looked at were "strings" and numbers.</li>
+      <li>Strings are text and are wrapped in "quotes". A number in quotes will be treated as a string.</li>
+      <li>Numbers are written without quotes and can be used in maths</li>
+      <li>"Hello " + "there!" => "Hello there!"</li> 
+      <li>4 + 5 => 9</li>
+      <li>"4" + "9" => "49"</li>
+      <li>You can run those ↑ in the console!</li>
+    </ul>
+    
+    <h3>Variables</h3>
+    <ul>
+      <li>A variable is a way of referring to something:</li>
+      <li>var simonsCar = "1989 white Nissan Skyline"</li>
+      <li>var melsCar = "red Mazda 6"</li>
+      <li>var numberOfCarsOwned = 6</li>
+      <li>Variables can be reassigned.</li>
+      <li>Create variable in the console and then call it back.</li>
+    </ul>
+
+    <h3>Functions</h3>
+    <ul>
+      <li>When a function is called it does something:</li>
+      <li><pre><code>function buysNewCar() {
+        melsCar = "gold BMW";
+        numberOfCarsOwned = numberOfCarsOwned + 1;
+      };</code></pre></li>
+      <li>The above function reassigns melsCar and adds 1 to numberOfCarsOwned</li>
+    </ul>
   </div>
 
   <div class="section-a" id="resources">
@@ -47,40 +84,24 @@
     <p><a href="https://www.codecademy.com/en/tracks/javascript-original">This Codecademy course</a> is an old one but a nice intro to some of the things JS can do. I reccommend going up to conditionals, then you can begin one of the newer Codecademy courses.</p> 
     <p>.. <a href="https://javascript.info/">This one's</a> a good simple non-interactive guide.</p> 
     <p>And of course <a href="https://teamtreehouse.com/library/javascript-basics">Treehouse</a> always has great courses.</p>
+    <p><a href="https://www.w3schools.com">W3 Schools</a> is an easy to follow reference with good examples (though it doesn't always follow best practice).</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a> is the best reference, but can be a bit more technical.</p>
     <p>You might find it takes you a few tries to get your head around things. Do small bits at a time, and go over parts you've already done. Just like HTML, it's more important to understand what bits of code are doing that it is to memorise exactly what to type.</p>
   </div>
 
-  <div class="section-b" id="design">
-    <h2>Design resources</h2>
-    <div class=logo-container>
-      <img src="./assets/img/beserk.png" alt="Atari Beserk alien">
-    </div>
-    <ul>
-      <li><a href="https://codepen.io/GretchCoding/pen/LQBYxP">Here is a codepen</a> that Gretchen did.  </li>
-      <li>...</li>
-      <li>...</li>
-    </ul>
-    
-    <h3>Some nice sites from bootcamp students:</h3>
-    <ul>
-      <li>...</li>
-      <li>...</li>
-      <li>...</li>
-    </ul>
-  </div>
 
-  <div class="section-a" id="challenges1">
+  <div class="section-b" id="challenges1">
     <h2>CHALLENGES</h2>
     <div class=logo-container>
       <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
     </div>
     <ul>
-      <li>- Create a function that will minus your age from the current year, to return your birth year. Run it in the console.</li>
-      <li>- Now add a new button that runs the function, so that a user can call it.</li>
+      <li>Create a function that will minus your age from the current year, to return your birth year. Run it in the console.</li>
+      <li>Now add a new button that runs the function, so that a user can call it.</li>
     </ul>
   </div>
   
-  <div class="section-b" id="challenges2">
+  <div class="section-a" id="challenges2">
     <h2>EXTRA CHALLENGES</h2>
     <div class=logo-container>
       <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
@@ -88,9 +109,9 @@
     </div>
     <p>In case you want more!</p>
     <ul>
-      <li>...</li>
-      <li>...</li>
-      <li>...</li>
+      <li>Create a plain input put on the page.</li>
+      <li>Refer to it in your JS file using document.getElementById("id-of-element")</li>
+      <li>Can you link it to the function and button you made before? (So that age comes from the input box adn the button runs your function on it.)</li>
     </ul>
   </div>
 
@@ -101,14 +122,18 @@
       <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
       <img src="./assets/img/mush.png" alt="Mario bros 8 bit mushroom">
     </div>
-    <p>...</p>
-    <p>...</p>
+    <ul>
+      <li>Invigate JS pop up boxes and add a prompt box to your page.</li>
+      <li>See if you can store the respone as a variable (check in the console to seen if you can return the variable).</li>
+      <li>Can you make the header change based on the response?</li>
+    </ul>
   </div>
 
-    <footer>
-      This is a footer
-    </footer>
+  <footer>
+      <a href="./index.html">Go to HTML</a>
+  </footer>
 
-    <script src="./assets/script.js"></script>
+  <script src="./assets/script.js"></script>
+
 </body>
 </html>
