@@ -49,7 +49,7 @@
       <li>The two main data types we looked at were "strings" and numbers.</li>
       <li>Strings are text and are wrapped in "quotes". A number in quotes will be treated as a string.</li>
       <li>Numbers are written without quotes and can be used in maths</li>
-      <li>"Hello " + "there!" => "Hello there!"</li> 
+      <li>"Hello " + "there!" => "Hello there!" (the => indicates what is returned)</li> 
       <li>4 + 5 => 9</li>
       <li>"4" + "9" => "49"</li>
       <li>You can run those ↑ in the console!</li>
@@ -58,22 +58,24 @@
     <h3>Variables</h3>
     <ul>
       <li>A variable is a way of referring to something:</li>
-      <li>var simonsCar = "1989 white Nissan Skyline"</li>
-      <li>var melsCar = "red Mazda 6"</li>
-      <li>var numberOfCarsOwned = 6</li>
+      <li>var usersName = "Bob"</li>
+      <li>var usersCar = "1989 white Nissan Skyline"</li>
+      <li>var numberOfCarsOwned = 2</li>
       <li>Variables can be reassigned.</li>
       <li>Create variable in the console and then call it back.</li>
+      <li>Reassign the variable and call it back again.</li>
     </ul>
 
     <h3>Functions</h3>
     <ul>
       <li>When a function is called it does something:</li>
       <li><pre><code>function buysNewCar() {
-        melsCar = "gold BMW";
+        usersCar = "gold BMW";
         numberOfCarsOwned = numberOfCarsOwned + 1;
       };</code></pre></li>
-      <li>The above function reassigns melsCar and adds 1 to numberOfCarsOwned</li>
-    </ul>
+      <li>The above function reassigns usersCar and adds 1 to numberOfCarsOwned. Now:</li>
+      <li>usersCar => "gold BMW"</li>
+      <li>numberOfCarsOwned => 3</li>    </ul>
   </div>
 
   <div class="section-a" id="resources">
@@ -111,7 +113,7 @@
     <ul>
       <li>Create a plain input put on the page.</li>
       <li>Refer to it in your JS file using document.getElementById("id-of-element")</li>
-      <li>Can you link it to the function and button you made before? (So that age comes from the input box adn the button runs your function on it.)</li>
+      <li>Can you link it to the function and button you made before? (So that age comes from the input box and the button runs your function on it.)</li>
     </ul>
   </div>
 
